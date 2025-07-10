@@ -1,0 +1,52 @@
+{
+  "name": "mobile-app-suite",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run lint && vite build",
+    "lint": "eslint .",
+    "lint:error": "eslint . --quiet", 
+    "preview": "vite preview",
+    "capacitor:add": "npm run build && npx cap add android",
+    "capacitor:sync": "npm run build && npx cap sync android",
+    "capacitor:open": "npx cap open android",
+    "capacitor:build": "npm run build && npx cap sync android && npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.5.1",
+    "@capacitor/core": "^5.5.1",
+    "@capacitor/device": "^5.0.6",
+    "@capacitor/preferences": "^5.0.6",
+    "@capacitor/splash-screen": "^5.0.6",
+    "@capacitor/status-bar": "^5.0.6",
+    "@questlabs/react-sdk": "^2.1.9",
+    "@supabase/supabase-js": "^2.39.0",
+    "react": "^18.3.1",
+    "react-router-dom": "^7.1.0",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
+    "framer-motion": "^11.0.8",
+    "echarts": "^5.5.0",
+    "echarts-for-react": "^3.0.2",
+    "date-fns": "4.1.0",
+    "react-webcam": "^7.2.0",
+    "uuid": "^9.0.1",
+    "crypto-js": "^4.2.0",
+    "sql.js": "^1.8.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^5.5.1",
+    "@eslint/js": "^9.9.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^5.4.2"
+  }
+}
